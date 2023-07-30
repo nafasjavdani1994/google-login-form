@@ -20,7 +20,7 @@ const SignUp = () => {
   const [focused, setFocused] = useState({});
 
   useEffect(() => {
-    setErrors(validate(data));
+    setErrors(validate(data, 'signup'));
   }, [data, focused]);
 
   const handleChange = (event) => {
