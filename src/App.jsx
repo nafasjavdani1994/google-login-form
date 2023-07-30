@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SignUp from './components/Signup.jsx';
+import SignUp from './components/SignUp';
 
 // import './App.css';
 
