@@ -32,7 +32,11 @@ const SignUp = () => {
   };
 
   const handleFocus = (event) => {
-    setFocused({ ...data, [event.target.name]: true });
+    if (event.target.name === 'isAccepted') {
+      setFocused({ ...data, [event.target.name]: false });
+    } else {
+      setFocused({ ...data, [event.target.name]: true });
+    }
   };
 
   const handleSubmit = (event) => {
